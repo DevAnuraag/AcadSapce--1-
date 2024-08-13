@@ -9,9 +9,9 @@ const TopBar = ({ className = "" }) => {
 
   return (
     <div
-      className={`self-stretch bg-transparent flex flex-row items-start justify-end py-0 px-[18px] box-border max-w-full ${className}`}
+      className={`self-stretch absolute w-full z-50 bg-transparent flex flex-row items-start justify-end py-0 px-[18px] box-border max-w-full ${className}`}
     >
-      <header className="flex-1 [filter:drop-shadow(0px_4px_4px_rgba(0,_0,_0,_0.25)_inset)] rounded-3xs flex flex-row items-end justify-start pt-2 pb-2.5 pl-0 pr-3 box-border gap-[5px] max-w-full z-[1]">
+      <header className="flex-1 rounded-3xs flex flex-row items-end justify-start pt-2 pb-2.5 pl-0 pr-3 box-border gap-[5px] max-w-full z-[1]">
         <img
           className="h-[67px] w-[194px] relative object-cover z-[2]"
           alt=""
@@ -19,44 +19,53 @@ const TopBar = ({ className = "" }) => {
         />
         <div className="flex-1 flex flex-col items-start justify-end pt-0 pb-1 pl-0 pr-[3px] box-border max-w-full">
           <div className="self-stretch h-[52px] relative max-w-full">
-            <div className="absolute top-[46px] left-[10px] bg-yellow-300 w-[67px] h-[3px]" />
             <nav className="m-0 absolute top-[0px] left-[0px] w-full flex flex-row items-start justify-start gap-[7px] max-w-full h-full text-center text-lg text-surface-light font-poppins">
               <Link
                 to="/"
-                className={`[text-decoration:none] h-[52px] w-[88px] relative font-bold text-[inherit] flex items-center justify-center shrink-0 z-[2] ${
-                  isActive("/") ? "text-yellow-500" : ""
+                className={`[text-decoration:none] h-[52px] w-[88px] relative flex items-center justify-center shrink-0 z-[2] ${
+                  isActive("/")
+                    ? "font-bold text-yellow-500 underline"
+                    : "text-inherit no-underline"
                 }`}
               >
                 Home
               </Link>
               <Link
                 to="/about-us-page"
-                className={`[text-decoration:none] h-[52px] w-[120px] relative text-[inherit] flex items-center justify-center shrink-0 whitespace-nowrap z-[2] ${
-                  isActive("/about-us-page") ? "text-yellow-500" : ""
+                className={`[text-decoration:none] h-[52px] w-[115px] relative flex items-center justify-center shrink-0 z-[2] ${
+                  isActive("/about-us-page")
+                    ? "font-bold text-yellow-500 underline"
+                    : "text-inherit"
                 }`}
               >
                 About Us
               </Link>
               <Link
                 to="/discover-page"
-                className={`[text-decoration:none] h-[52px] w-[115px] relative text-[inherit] flex items-center justify-center shrink-0 z-[2] ${
-                  isActive("/discover-page") ? "text-yellow-500" : ""
+                className={`[text-decoration:none] h-[52px] w-[115px] relative flex items-center justify-center shrink-0 z-[2] ${
+                  isActive("/discover-page")
+                    ? "font-bold text-yellow-500"
+                    : "text-inherit"
                 }`}
               >
                 Discover
               </Link>
               <Link
                 to="/blog-page"
-                className={`[text-decoration:none] h-[52px] w-20 relative text-[inherit] flex items-center justify-center shrink-0 z-[2] ${
-                  isActive("/blog-page") ? "text-yellow-500" : ""
+                className={`[text-decoration:none] h-[52px] w-20 relative flex items-center justify-center shrink-0 z-[2] ${
+                  isActive("/blog-page")
+                    ? "font-bold text-yellow-500"
+                    : "text-inherit"
                 }`}
               >
                 Blogs
               </Link>
               <Link
                 to="/contact-us-page"
-                className={`[text-decoration:none] h-[52px] flex-1 relative text-[inherit] flex items-center justify-center whitespace-nowrap z-[2] ${
-                  isActive("/contact-us-page") ? "text-yellow-500" : ""
+                className={`[text-decoration:none] h-[52px] flex-1 relative flex items-center justify-center whitespace-nowrap z-[2] ${
+                  isActive("/contact-us-page")
+                    ? "font-bold text-yellow-500"
+                    : "text-inherit"
                 }`}
               >
                 Contact Us

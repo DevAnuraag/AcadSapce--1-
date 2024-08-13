@@ -1,5 +1,4 @@
 import { Button } from "@mui/material";
-import TopBar from "../components/TopBar";
 import Hero from "../components/Hero";
 import Partners from "../components/Partners";
 import Access from "../components/Access";

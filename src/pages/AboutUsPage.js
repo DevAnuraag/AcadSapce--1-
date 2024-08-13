@@ -7,22 +7,25 @@ import ContactDetails from "../components/ContactDetails";
 
 const AboutUsPage = () => {
   return (
-    <div className="w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
+    <div className="w-full absolute top-0 flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
+
       <main className="h-[3729px] flex-1 relative bg-midnightblue-100 max-w-full mq1125:h-auto mq1125:min-h-[3729]">
         <div className="absolute top-[0px] left-[2px] bg-midnightblue-100 w-full h-full hidden" />
         <img
-          className="absolute top-[0px] left-[2px] w-[1440px] h-[1262px] object-cover z-[1]"
+          className="absolute top-[0px] left-[0px] w-full h-[1262px] object-cover z-[1]"
           alt=""
-          src="/original165ac86b13223f21f0ff259fde26d8f0-2@2x.png"
+          src="/original-165ac86b13223f21f0ff259fde26d8f0 2.png"
         />
-        <HeroContent />
+        {/* <HeroContent /> */}
         <img
           className="absolute h-[7.75%] w-[99.86%] top-[89.49%] right-[0.07%] bottom-[2.76%] left-[0.07%] max-w-full overflow-hidden max-h-full z-[1]"
           alt=""
           src="/rectangle-5428.svg"
         />
         <div className="absolute top-[3398.7px] left-[715px] w-[284px] h-[26px] hidden" />
+
         <FrameComponent5 />
+
         <section className="absolute top-[1342.8px] left-[4px] w-full flex flex-col items-end justify-start gap-[70px] max-w-full text-left text-xl text-surface-light font-poppins mq450:gap-[17px] mq800:gap-[35px]">
           <div className="self-stretch flex flex-row items-start justify-center pt-0 pb-[40.7px] pl-[23px] pr-5 box-border max-w-full">
             <img
@@ -39,35 +42,35 @@ const AboutUsPage = () => {
                 propBackgroundImage="url('/as01-1@2x.png')"
                 as011="/as01-1@2x.png"
               />
-              <div className="w-44 flex flex-col items-start justify-end pt-0 px-0 pb-px box-border">
+              <div className="box-border flex flex-col items-start justify-end px-0 pt-0 pb-px w-44">
                 <div className="self-stretch flex flex-col items-start justify-start gap-[25px] z-[2]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
+                  <div className="flex flex-col items-start self-stretch justify-start">
                     <b className="self-stretch relative leading-[26px] capitalize mq450:text-base mq450:leading-[21px]">
                       Useful Links
                     </b>
                   </div>
                   <div className="flex flex-col items-start justify-start gap-2.5 text-sm">
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Registration
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Home Page
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         What People Say
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Get Answers
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Discover More
                       </div>
@@ -112,7 +115,7 @@ const AboutUsPage = () => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-end justify-start max-w-full text-center text-whitesmoke font-space-grotesk">
+          <div className="flex flex-row items-end self-stretch justify-start max-w-full text-center text-whitesmoke font-space-grotesk">
             <b className="w-[1437px] relative tracking-[0.8px] leading-[26px] capitalize flex whitespace-pre-wrap items-center justify-center shrink-0 max-w-full z-[1] mq450:text-base mq450:leading-[21px]">
               CopyRight 2024 Acadspace.org. All Rights Received
             </b>
@@ -127,6 +130,7 @@ const AboutUsPage = () => {
           </div>
         </section>
       </main>
+
     </div>
   );
 };

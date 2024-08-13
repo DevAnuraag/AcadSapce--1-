@@ -1,4 +1,3 @@
-import FrameComponent7 from "../components/FrameComponent7";
 import BlogContent from "../components/BlogContent";
 import BlogIntroduction from "../components/BlogIntroduction";
 import Recommendations from "../components/Recommendations";
@@ -7,10 +6,8 @@ import Footer1 from "../components/Footer1";
 const BlogPage = () => {
   return (
     <div className="w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
-      <main className="flex-1 bg-midnightblue-100 flex flex-col items-start justify-start py-[33px] px-0 box-border gap-[122px] max-w-full mq1350:pt-5 mq1350:pb-5 mq1350:box-border mq800:gap-[61px] mq450:gap-[30px]">
+      <main className="flex-1 bg-midnightblue-100 flex flex-col items-start justify-start  px-0 box-border gap-[122px] max-w-full mq1350:pt-5 mq1350:pb-5 mq1350:box-border mq800:gap-[61px] mq450:gap-[30px]">
         <div className="self-stretch h-[7388px] relative bg-midnightblue-100 hidden" />
-        <FrameComponent7 />
-        <div className="w-[284px] h-[26px] relative hidden" />
         <BlogContent />
         <BlogIntroduction />
         <section className="w-[1410px] flex flex-row items-start justify-center pt-0 px-5 pb-24 box-border max-w-full text-justify text-5xl text-surface-light font-poppins mq1350:pb-[62px] mq1350:box-border mq800:pb-10 mq800:box-border">

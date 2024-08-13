@@ -6,8 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import LandingPageNew from "./pages/LandingPageNew";
-import AboutUsPage from "./pages/AboutUsPage";
-import BLogPage1 from "./pages/BLogPage1";
+import AboutUsPage from "./pages/AboutUsPage";  
 import ContactUsPage from "./pages/ContactUsPage";
 import BlogPage from "./pages/BlogPage";
 import DiscoverPage from "./pages/DiscoverPage";

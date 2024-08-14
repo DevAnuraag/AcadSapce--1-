@@ -5,16 +5,17 @@ import PropTypes from "prop-types";
 const FrameComponent3 = ({ className = "" }) => {
   return (
     <div
-      className={`self-stretch flex flex-col items-end justify-start gap-[104px] max-w-full text-center text-31xl text-surface-light font-poppins mq450:gap-[26px] mq800:gap-[52px] ${className}`}
+      className={`self-stretch flex flex-col items-end justify-start gap-0 py-12 max-w-full text-center text-31xl text-surface-light font-poppins mq450:gap-[26px] mq800:gap-[52px] ${className}`}
     >
-      <h1 className="m-0 self-stretch relative text-inherit leading-[74px] font-bold font-inherit [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25),_0px_4px_4px_rgba(0,_0,_0,_0.25)] z-[1] mq450:text-11xl mq450:leading-[44px] mq800:text-21xl mq800:leading-[59px]">
+      <h1 className="m-0 pb-12 self-stretch relative text-inherit leading-[50px] font-bold font-inherit [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25),_0px_4px_4px_rgba(0,_0,_0,_0.25)]">
         Discover
       </h1>
-      <div className="w-[1429px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-16xl">
+      
+      <div className="box-border flex flex-row items-start justify-center w-full max-w-full px-5 py-0 text-16xl">
         <div className="w-[1095px] rounded-xl [background:linear-gradient(#020c0d,_#020c0d),_linear-gradient(rgba(31,_188,_203,_0.1),_rgba(31,_188,_203,_0.1)),_linear-gradient(180deg,_#020c0d,_rgba(31,_188,_203,_0))] border-surface-light border-[1px] border-solid box-border flex flex-row flex-wrap items-start justify-center pt-[23px] pb-[17px] pl-[27px] pr-1.5 gap-[7px] max-w-full z-[1]">
           <div className="h-[456px] w-[1095px] relative rounded-xl [background:linear-gradient(#020c0d,_#020c0d),_linear-gradient(rgba(31,_188,_203,_0.1),_rgba(31,_188,_203,_0.1)),_linear-gradient(180deg,_#020c0d,_rgba(31,_188,_203,_0))] border-surface-light border-[1px] border-solid box-border hidden max-w-full" />
           <div className="flex-1 flex flex-col items-start justify-start py-0 pl-0 pr-[17px] box-border min-w-[252px] max-w-full">
-            <div className="self-stretch flex flex-row items-start justify-start relative max-w-full">
+            <div className="relative flex flex-row items-start self-stretch justify-start max-w-full">
               <img
                 className="h-[410px] flex-1 relative rounded-xl max-w-full overflow-hidden object-cover z-[2]"
                 loading="lazy"
@@ -37,7 +38,7 @@ const FrameComponent3 = ({ className = "" }) => {
             </div>
           </div>
           <div className="w-[371px] rounded-xl bg-gray border-stroke border-[1px] border-solid box-border flex flex-col items-end justify-start pt-0 px-0 pb-3 gap-[5.5px] max-w-full z-[2]">
-            <div className="self-stretch flex flex-col items-start justify-start max-w-full">
+            <div className="flex flex-col items-start self-stretch justify-start max-w-full">
               <div className="self-stretch rounded-t-3xs rounded-b-none [background:linear-gradient(rgba(2,_12,_13,_0.52),_rgba(2,_12,_13,_0.52)),_linear-gradient(rgba(31,_188,_203,_0.1),_rgba(31,_188,_203,_0.1)),_linear-gradient(180deg,_#020c0d,_rgba(31,_188,_203,_0))] flex flex-row items-end justify-between pt-[3px] pb-1.5 pl-[106px] pr-[22px] box-border max-w-full gap-5 z-[2] mq450:flex-wrap mq450:pl-5 mq450:box-border">
                 <div className="h-[62px] w-[371px] relative rounded-t-3xs rounded-b-none [background:linear-gradient(rgba(2,_12,_13,_0.52),_rgba(2,_12,_13,_0.52)),_linear-gradient(rgba(31,_188,_203,_0.1),_rgba(31,_188,_203,_0.1)),_linear-gradient(180deg,_#020c0d,_rgba(31,_188,_203,_0))] hidden max-w-full" />
                 <h1 className="m-0 relative text-inherit font-bold font-inherit [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25),_0px_4px_4px_rgba(0,_0,_0,_0.25)] z-[3] mq450:text-2xl mq800:text-9xl">
@@ -76,7 +77,7 @@ const FrameComponent3 = ({ className = "" }) => {
               <div className="flex-1 flex flex-col items-start justify-start gap-[18px] max-w-full">
                 <div className="self-stretch flex flex-row items-start justify-start py-0 pl-[7px] pr-0 box-border max-w-full">
                   <div className="flex-1 flex flex-col items-start justify-start gap-2.5 max-w-full">
-                    <div className="self-stretch flex flex-col items-start justify-start gap-1 max-w-full">
+                    <div className="flex flex-col items-start self-stretch justify-start max-w-full gap-1">
                       <div className="w-[312.9px] flex flex-row items-start justify-start gap-[18.2px]">
                         <div className="w-[140.9px] flex flex-col items-start justify-start pt-[1.5px] px-0 pb-0 box-border">
                           <div className="self-stretch flex flex-row items-start justify-start gap-[2.5px]">
@@ -141,7 +142,7 @@ const FrameComponent3 = ({ className = "" }) => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row items-start justify-start gap-6 max-w-full text-left text-xl mq450:flex-wrap">
+                <div className="flex flex-row items-start justify-start max-w-full gap-6 text-xl text-left mq450:flex-wrap">
                   <Button
                     className="h-9 w-[139px]"
                     disableElevation
@@ -185,7 +186,7 @@ const FrameComponent3 = ({ className = "" }) => {
                   src="/xmlid-509.svg"
                 />
               </div>
-              <div className="self-stretch flex flex-col items-end justify-start gap-2">
+              <div className="flex flex-col items-end self-stretch justify-start gap-2">
                 <h3 className="m-0 self-stretch relative text-inherit font-medium font-inherit z-[2] mq450:text-base">
                   Book your Slot to Access top Content, Internships, Jobs.
                 </h3>

@@ -1,5 +1,4 @@
-import { TextField, InputAdornment, Icon, IconButton } from "@mui/material";
-import HeroContent from "../components/HeroContent";
+import { TextField } from "@mui/material";
 import FrameComponent5 from "../components/FrameComponent5";
 import TeamMembers from "../components/TeamMembers";
 import FrameComponent6 from "../components/FrameComponent6";
@@ -8,25 +7,15 @@ import ContactDetails from "../components/ContactDetails";
 const AboutUsPage = () => {
   return (
     <div className="w-full absolute top-0 flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
-
-      <main className="h-[3729px] flex-1 relative bg-midnightblue-100 max-w-full mq1125:h-auto mq1125:min-h-[3729]">
-        <div className="absolute top-[0px] left-[2px] bg-midnightblue-100 w-full h-full hidden" />
-        <img
-          className="absolute top-[0px] left-[0px] w-full h-[1262px] object-cover z-[1]"
-          alt=""
-          src="/original-165ac86b13223f21f0ff259fde26d8f0 2.png"
-        />
-        {/* <HeroContent /> */}
-        <img
-          className="absolute h-[7.75%] w-[99.86%] top-[89.49%] right-[0.07%] bottom-[2.76%] left-[0.07%] max-w-full overflow-hidden max-h-full z-[1]"
-          alt=""
-          src="/rectangle-5428.svg"
-        />
-        <div className="absolute top-[3398.7px] left-[715px] w-[284px] h-[26px] hidden" />
+      <main className="flex-1 relative bg-midnightblue-100 max-w-full mq1125:min-h-[3729px]">
+        {/* Parallax Section */}
+        <div className="relative overflow-hidden">
+          <div className="parallax-bg h-[1262px]"></div>
+        </div>
 
         <FrameComponent5 />
 
-        <section className="absolute top-[1342.8px] left-[4px] w-full flex flex-col items-end justify-start gap-[70px] max-w-full text-left text-xl text-surface-light font-poppins mq450:gap-[17px] mq800:gap-[35px]">
+        <section className="relative w-full flex flex-col items-end justify-start gap-[70px] max-w-full text-left text-xl text-surface-light font-poppins mq450:gap-[17px] mq800:gap-[35px]">
           <div className="self-stretch flex flex-row items-start justify-center pt-0 pb-[40.7px] pl-[23px] pr-5 box-border max-w-full">
             <img
               className="w-[439.5px] relative max-h-full max-w-full z-[1]"
@@ -130,7 +119,6 @@ const AboutUsPage = () => {
           </div>
         </section>
       </main>
-
     </div>
   );
 };

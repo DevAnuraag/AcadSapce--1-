@@ -21,41 +21,41 @@ const Footer2 = ({ className = "" }) => {
               propBackgroundImage="url('/as01-1@2x.png')"
               as011="/as01-1@2x.png"
             />
-            <div className="w-44 flex flex-col items-start justify-end pt-0 px-0 pb-px box-border">
-              <div className="self-stretch flex flex-row items-start justify-start relative">
+            <div className="box-border flex flex-col items-start justify-end px-0 pt-0 pb-px w-44">
+              <div className="relative flex flex-row items-start self-stretch justify-start">
                 <img
                   className="h-[289px] w-[1440px] absolute !m-[0] top-[-63.7px] right-[-816px] z-[1]"
                   alt=""
                   src="/rectangle-54281.svg"
                 />
                 <div className="flex-1 flex flex-col items-start justify-start gap-[25px] z-[2]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
+                  <div className="flex flex-col items-start self-stretch justify-start">
                     <b className="self-stretch relative leading-[26px] capitalize mq450:text-base mq450:leading-[21px]">
                       Useful Links
                     </b>
                   </div>
                   <div className="self-stretch flex flex-col items-start justify-start gap-2.5 text-sm">
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Registration
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Home Page
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         What People Say
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Get Answers
                       </div>
                     </div>
-                    <div className="overflow-hidden flex flex-col items-start justify-start">
+                    <div className="flex flex-col items-start justify-start overflow-hidden">
                       <div className="w-[183px] relative tracking-[0.8px] leading-[21px] flex items-center">
                         Discover More
                       </div>
@@ -70,7 +70,7 @@ const Footer2 = ({ className = "" }) => {
                 <b className="w-[400px] relative tracking-[0.8px] leading-[26px] capitalize flex items-center max-w-full z-[3] mq450:text-base mq450:leading-[21px]">
                   Subscribe Us
                 </b>
-                <div className="self-stretch flex flex-col items-start justify-start gap-4 max-w-full text-base">
+                <div className="flex flex-col items-start self-stretch justify-start max-w-full gap-4 text-base">
                   <div className="self-stretch relative tracking-[0.8px] leading-[25.6px] z-[2]">
                     Subscribe to Our Newsletter and Stay Updated with latest
                     News, Trends, Events.
@@ -116,7 +116,7 @@ const Footer2 = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <div className="self-stretch flex flex-row items-end justify-start max-w-full text-center text-whitesmoke font-space-grotesk">
+        <div className="flex flex-row items-end self-stretch justify-start max-w-full text-center text-whitesmoke font-space-grotesk">
           <b className="w-[1437px] relative tracking-[0.8px] leading-[26px] capitalize flex whitespace-pre-wrap items-center justify-center shrink-0 max-w-full z-[1] mq450:text-base mq450:leading-[21px]">
             CopyRight 2024 Acadspace.org. All Rights Received
           </b>

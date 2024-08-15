@@ -21,7 +21,7 @@ const TeamMembers = ({ className = "" }) => {
               alt=""
               src="/social-icons1.svg"
             />
-            <div className="w-[277px] flex flex-row items-start justify-end py-0 px-[21px] box-border">
+            <div className="w-[277px] flex flex-row items-start justify-center py-0 px-[21px] box-border">
               <Button
                 className="h-[61px] flex-1 z-[2]"
                 disableElevation
@@ -41,6 +41,7 @@ const TeamMembers = ({ className = "" }) => {
               </Button>
             </div>
           </div>
+          
           <div className="w-[316px] flex flex-col items-end justify-start pt-3 px-[11px] pb-2.5 box-border relative gap-[284px] mq450:gap-[142px]">
             <img
               className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full object-cover z-[1]"
@@ -72,6 +73,7 @@ const TeamMembers = ({ className = "" }) => {
               </Button>
             </div>
           </div>
+          
           <div className="flex-[0.9491] flex flex-col items-end justify-start pt-[26px] px-4 pb-2.5 box-border relative gap-[269px] min-w-[214px] max-w-full mq450:gap-[134px] mq1125:flex-1">
             <img
               className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full object-contain z-[1]"
@@ -104,6 +106,7 @@ const TeamMembers = ({ className = "" }) => {
             </div>
           </div>
         </div>
+        
         <div className="self-stretch flex flex-row items-start justify-start py-0 pl-[42px] pr-[50px] box-border max-w-full mq1125:pl-[21px] mq1125:pr-[25px] mq1125:box-border">
           <div className="flex-1 flex flex-col items-end justify-start gap-[88.4px] max-w-full mq800:gap-[22px] mq1125:gap-11">
             <div className="w-[955.6px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
@@ -114,26 +117,21 @@ const TeamMembers = ({ className = "" }) => {
                 src="/the-driving-force.svg"
               />
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-10 max-w-full mq800:gap-5">
+            <div className="flex flex-col items-start self-stretch justify-start max-w-full gap-10 mq800:gap-5">
               <div className="self-stretch flex flex-col items-start justify-start gap-[30px] max-w-full">
                 <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[34px] max-w-full mq800:gap-[17px]">
                   <div className="flex-1 flex flex-col items-start justify-start gap-[33px] min-w-[305px] max-w-full mq800:gap-4">
-                    <div className="self-stretch flex flex-col items-start justify-start py-[51px] pl-[242px] pr-[66px] relative gap-[3px] mq800:pl-[121px] mq800:pr-[33px] mq800:box-border">
-                      <img
-                        className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full z-[1]"
-                        loading="lazy"
-                        alt=""
-                        src="/group-1000001892.svg"
-                      />
-                      <h3 className="m-0 relative text-5xl font-bold font-inherit text-surface-light z-[2] mq450:text-lgi">
-                        Anuravo Deb
-                      </h3>
-                      <div className="relative z-[2]">Full Stack Developer</div>
-                      <div className="relative inline-block min-w-[88px] z-[2]">
-                        IIT Bombay
-                      </div>
-                    </div>
+                  <MemberOneInfoDuplicate
+                      propAlignSelf="stretch"
+                      propFlex="unset"
+                      propMinWidth="unset"
+                      rectangle5257Stroke="/rectangle-5257-stroke.svg"
+                      rectangle5414="/rectangle-5414@2x.png"
+                    />
                     <MemberOneInfoDuplicate
+                      propAlignSelf="stretch"
+                      propFlex="unset"
+                      propMinWidth="unset"
                       rectangle5257Stroke="/rectangle-5257-stroke.svg"
                       rectangle5414="/rectangle-5414@2x.png"
                     />
@@ -155,7 +153,7 @@ const TeamMembers = ({ className = "" }) => {
                     />
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col items-start justify-start gap-10 max-w-full mq800:gap-5">
+                <div className="flex flex-col items-start self-stretch justify-start max-w-full gap-10 mq800:gap-5">
                   <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[34px] max-w-full mq800:gap-[17px]">
                     <MemberOneInfoDuplicate
                       propAlignSelf="unset"
@@ -209,6 +207,7 @@ const TeamMembers = ({ className = "" }) => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const CareersGrid = ({ className = "" }) => {
   return (
     <div
-      className={`self-stretch flex flex-row items-start justify-center py-0 pl-5 pr-[25px] box-border max-w-full text-center text-3xl text-surface-light font-poppins ${className}`}
+      className={`self-stretch flex flex-row items-start  justify-center py-0 pl-5 pr-[25px]  box-border max-w-full text-center text-3xl text-surface-light font-poppins ${className}`}
     >
       <div className="w-[1000px] flex flex-col items-start justify-start gap-[43px] max-w-full mq800:gap-[21px]">
         <img
@@ -13,7 +13,7 @@ const CareersGrid = ({ className = "" }) => {
           src="/rectangle@2x.png"
         />
         <div className="w-[973px] flex flex-row items-start justify-start py-0 px-[3px] box-border max-w-full">
-          <div className="flex-1 flex flex-col items-start justify-start gap-8 max-w-full mq800:gap-4">
+          <div className="flex flex-col items-start justify-start flex-1 max-w-full gap-8 mq800:gap-4">
             <h3 className="m-0 self-stretch relative text-inherit leading-[175%] font-normal font-inherit z-[1] mq450:text-lg mq450:leading-[31px]">
               Every week, we feature some of our favorite webinars with Subject
               Experts from different Fields. You can explore below your choice
@@ -144,7 +144,7 @@ const CareersGrid = ({ className = "" }) => {
                       src="/rectangle-4752@2x.png"
                     />
                   </div>
-                  <div className="flex flex-col items-start justify-start pt-0 px-0 pb-3 gap-5">
+                  <div className="flex flex-col items-start justify-start gap-5 px-0 pt-0 pb-3">
                     <div className="flex flex-row items-start justify-start py-0 px-[7px]">
                       <img
                         className="h-[86px] w-[86px] relative object-cover z-[1]"
@@ -190,7 +190,7 @@ const CareersGrid = ({ className = "" }) => {
                       </div>
                     </div>
                     <div className="self-stretch flex flex-row items-start justify-start py-0 pl-0.5 pr-0">
-                      <div className="flex-1 flex flex-col items-start justify-start gap-3">
+                      <div className="flex flex-col items-start justify-start flex-1 gap-3">
                         <b className="relative leading-[22px] z-[1]">
                           Business Management
                         </b>
@@ -254,7 +254,7 @@ const CareersGrid = ({ className = "" }) => {
                       />
                     </div>
                     <div className="self-stretch flex flex-col items-start justify-start gap-[31px]">
-                      <div className="self-stretch flex flex-row items-start justify-start py-0 pl-1 pr-0">
+                      <div className="flex flex-row items-start self-stretch justify-start py-0 pl-1 pr-0">
                         <img
                           className="h-[86px] w-[86px] relative object-cover z-[1]"
                           loading="lazy"
@@ -284,7 +284,7 @@ const CareersGrid = ({ className = "" }) => {
                       </div>
                     </div>
                     <div className="self-stretch flex flex-row items-start justify-start py-0 pl-[13px] pr-0">
-                      <div className="flex-1 flex flex-col items-start justify-start gap-3">
+                      <div className="flex flex-col items-start justify-start flex-1 gap-3">
                         <b className="relative leading-[22px] z-[1]">
                           Performing Arts
                         </b>
@@ -295,13 +295,13 @@ const CareersGrid = ({ className = "" }) => {
                     </div>
                     <div className="flex flex-col items-start justify-start pt-0 px-0 pb-[18px] gap-2.5">
                       <b className="relative leading-[22px] z-[1]">{`Media & Comm.`}</b>
-                      <div className="flex flex-row items-start justify-start py-0 px-3 text-base text-gray1-900">
+                      <div className="flex flex-row items-start justify-start px-3 py-0 text-base text-gray1-900">
                         <div className="relative leading-[120%] inline-block min-w-[96px] z-[1]">
                           16 Webinars
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-row items-start justify-start py-0 px-3">
+                    <div className="flex flex-row items-start justify-start px-3 py-0">
                       <div className="flex flex-col items-start justify-start gap-3">
                         <b className="relative leading-[22px] inline-block min-w-[74px] z-[1]">
                           Finance

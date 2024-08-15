@@ -1,15 +1,22 @@
 import BlogContent from "../components/BlogContent";
 import BlogIntroduction from "../components/BlogIntroduction";
 import Recommendations from "../components/Recommendations";
-import Footer1 from "../components/Footer1";
+import Footer from "../components/Footer";
 
 const BlogPage = () => {
   return (
     <div className="w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
-      <main className="flex-1 bg-midnightblue-100 flex flex-col items-start justify-start  px-0 box-border gap-[122px] max-w-full mq1350:pt-5 mq1350:pb-5 mq1350:box-border mq800:gap-[61px] mq450:gap-[30px]">
-        <div className="self-stretch h-[7388px] relative bg-midnightblue-100 hidden" />
+      <main className="flex-1 bg-midnightblue-100 flex flex-col items-start justify-start px-0 box-border gap-[122px] max-w-full mq1350:pt-5 mq1350:pb-5 mq1350:box-border mq800:gap-[61px] mq450:gap-[30px]">
+
+        {/* Parallax Background */}
+        <div
+          className="absolute top-0 left-0 w-full h-[1262px] bg-fixed bg-cover bg-center z-[1]"
+          style={{ backgroundImage: 'url("/original165ac86b13223f21f0ff259fde26d8f0-22@2x.png")' }}
+        />
+
         <BlogContent />
         <BlogIntroduction />
+
         <section className="w-[1410px] flex flex-row items-start justify-center pt-0 px-5 pb-24 box-border max-w-full text-justify text-5xl text-surface-light font-poppins mq1350:pb-[62px] mq1350:box-border mq800:pb-10 mq800:box-border">
           <div className="w-[1000px] flex flex-col items-start justify-start gap-[43px] max-w-full mq800:gap-[21px]">
             <div className="w-[980px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
@@ -188,8 +195,9 @@ National Association of Colleges and Employers (NACE). "The Value of Internships
             </div>
           </div>
         </section>
+
         <Recommendations />
-        <Footer1 />
+        <Footer />
       </main>
     </div>
   );

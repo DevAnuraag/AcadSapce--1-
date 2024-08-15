@@ -17,11 +17,6 @@ const BlogContent = ({ className = "" }) => {
           </div>
           
           <div className="relative flex flex-row items-center self-stretch justify-center max-w-full text-lg text-left text-surface-light">
-            <img
-              className="h-[1262px] w-full absolute !m-[0] bottom-[-516px] left-[-1px] object-cover z-[1]"
-              alt=""
-              src="/original165ac86b13223f21f0ff259fde26d8f0-22@2x.png"
-            />
             <div className="flex-1 bg-blue-200 flex flex-col items-start justify-start pt-[30px] px-4 pb-[73px] box-border gap-[14.5px] max-w-full z-[2]">
               <div className="w-[1440px] h-[243px] relative bg-blue-200 hidden max-w-full" />
               <div className="w-[378px] flex flex-row flex-wrap items-start justify-start py-0 pl-0 pr-5 box-border gap-[17px] max-w-full text-blueviolet">

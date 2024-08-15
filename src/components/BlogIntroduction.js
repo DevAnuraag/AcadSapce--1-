@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 const BlogIntroduction = ({ className = "" }) => {
   return (
     <section
-      className={`w-[1415px] flex flex-row items-start justify-center pt-0 px-5 pb-[146px] box-border max-w-full text-justify text-5xl text-surface-light font-poppins mq1350:pb-[62px] mq1350:box-border mq1125:pb-10 mq1125:box-border mq450:pb-[26px] mq450:box-border ${className}`}
+      className={`w-full flex flex-row items-center justify-center pt-0 px-5 pb-[146px] box-border max-w-full text-justify text-5xl text-surface-light font-poppins mq1350:pb-[62px] mq1350:box-border mq1125:pb-10 mq1125:box-border mq450:pb-[26px] mq450:box-border ${className}`}
     >
+      
       <div className="w-[1005px] flex flex-col items-start justify-start gap-[74px] max-w-full mq800:gap-[18px] mq1125:gap-[37px]">
         <div className="self-stretch flex flex-row items-start justify-start py-0 pl-[5px] pr-0 box-border max-w-full">
-          <div className="flex-1 flex flex-row items-start justify-start max-w-full">
+          <div className="flex flex-row items-start justify-start flex-1 max-w-full">
             <div className="h-[1729px] flex-1 relative max-w-full">
               <div className="absolute top-[0px] left-[0px] leading-[160%] flex items-center w-full h-full z-[1] mq450:text-lgi mq450:leading-[33px]">
                 <span className="w-full">
@@ -380,6 +381,7 @@ const BlogIntroduction = ({ className = "" }) => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };

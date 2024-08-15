@@ -41,15 +41,15 @@ const InfoProduct = ({
         className="w-[18px] flex flex-row items-start justify-start"
         style={v6IconFreeStyle}
       >
-        <div
+        <img
+          src={icon}
+          alt="icon"
           className="flex-1 relative leading-[16px] whitespace-nowrap"
           style={icon1Style}
-        >
-          {icon}
-        </div>
+        />
       </div>
       <div
-        className="relative text-smi capitalize font-medium font-h6 text-dark-75 text-left inline-block min-w-[52px]"
+        className="relative text-smi capitalize font-medium font-h6 text-dark-75 text-left inline-block min-w-[52px] shrink-0"
         style={lesson6Style}
       >
         {lesson6}
@@ -60,7 +60,7 @@ const InfoProduct = ({
 
 InfoProduct.propTypes = {
   className: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.string.isRequired, // icon should be a URL, so marked as required
   lesson6: PropTypes.string,
 
   /** Style props */

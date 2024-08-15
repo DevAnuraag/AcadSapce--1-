@@ -5,7 +5,7 @@ const CareersGrid = ({ className = "" }) => {
     <div
       className={`self-stretch flex flex-row items-start  justify-center py-0 pl-5 pr-[25px]  box-border max-w-full text-center text-3xl text-surface-light font-poppins ${className}`}
     >
-      <div className="w-[1000px] flex flex-col items-start justify-start gap-[43px] max-w-full mq800:gap-[21px]">
+      <div className="w-[1000px] flex flex-col items-start justify-start gap-16">
         <img
           className="self-stretch h-[498px] relative rounded-xl max-w-full overflow-hidden shrink-0 object-cover z-[1]"
           loading="lazy"
@@ -78,6 +78,7 @@ const CareersGrid = ({ className = "" }) => {
                               className="h-[86px] w-[86px] relative object-cover z-[1]"
                               loading="lazy"
                               alt=""
+                              src={'https://firebasestorage.googleapis.com/v0/b/acadspace-36bb8.appspot.com/o/Assets%2FWebApp%2Fnew%2FRectangle%204732.png?alt=media&token=a0446cb1-601c-4d67-9756-ec0a2fb30013'}
                             />
                             <div className="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-3.5 box-border min-w-[101px]">
                               <div className="self-stretch flex flex-col items-start justify-start gap-2.5">
